@@ -1,0 +1,168 @@
+
+/*all pages*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background-color:#DADADA;
+	font-family:Calibri;
+	background-image:url(background.png);
+	background-position:center;
+	background-size:100%;
+}
+#main{
+	margin:auto;
+	width:900px;
+	height:auto;
+}
+#head{
+	height:70px;
+	background-color:white;
+}
+#logo{
+	margin-left:5%;
+	padding:10px;
+	padding-left:0px;
+	padding-right:0px;
+}
+#logo img{
+	height:50px;
+}
+#mainMenu{
+	height:35px;
+	background-color:#434343;
+	padding-top:5px;
+}
+.menuItems{
+	font-size:14pt;
+	color:white;
+	float:left;
+	margin-left:5%;
+}
+.menuItems a{
+	color:white;
+	text-decoration:none;
+}
+#foot{
+	color:white;
+	height:auto;
+	background-color:#434343;
+	padding:1%;
+	padding-left:5%;
+}
+/*home page*/
+
+#featuredImage{
+	height:auto;
+	padding-top:15px;
+	padding-right:15px;
+	background-color:white;
+	float:left;
+}
+#featuredImage img{
+	height:300px;
+}
+#featured{
+	height:auto;
+	width:900px;
+	padding:2%;
+	background-color:white;
+}
+	/*javascript for image scroller*/
+
+@keyframes fade{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+#slider{
+  margin: auto;
+	width:700px;
+  overflow:hidden;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.active{
+  background:black;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:80%;
+  }
+}
+.container {
+	width:900px;
+	margin:auto;
+	
+}
+.slides img{
+	width:100%;
+
+}
+
+/*about us page*/
+
+#about{
+	height:auto;
+	width:900px;
+	padding:2%;
+	background-color:white;
+}
+#aboutImage{
+	height:auto;
+	padding-top:15px;
+	padding-right:15px;
+	background-color:white;
+	float:left;
+}
+#aboutImage img{
+	height:250px;
+}
+
+/*gallery page*/
+
+#gallery{
+	padding-top:15px;
+	height:auto;
+	background-color:white;
+	text-align:center;
+}
+#largeImg{
+	border:solid 1px #ccc;
+	width:800px;
+}
+.thumbs img{
+	border:solid 1px #ccc;
+	width:175px;
+	height:150px;
+	padding:4px;
+}
+.thumbs img:hover{
+	border-color:#FF9900;
+}
